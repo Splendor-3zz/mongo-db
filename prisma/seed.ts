@@ -20,16 +20,7 @@ async function main() {
   // })
 
   // generate jake date for todo
-  await prisma.todo.createMany({
-    data: Array.from({length: 25}, () => (
-      {
-       title: faker.lorem.words({min: 2, max: 5}),
-       body: faker.lorem.words({min: 3, max: 10}),
-       user_id: ""
-    }
-    ))
-  })
-}
+//   await
 
 main()
   .then(async () => {
