@@ -34,13 +34,6 @@ import Spin from "./Spin";
 import { ITodo } from "@/interface";
 
 
-
-
-
-interface IProps {
-
-}
-
 const EditTodoForm = ({todo}: {todo: ITodo}) => {
     const [isLoading, setIsLoading] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
