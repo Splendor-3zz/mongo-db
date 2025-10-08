@@ -5,10 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,

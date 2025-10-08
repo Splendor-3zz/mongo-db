@@ -2,13 +2,11 @@
 
 
 import { Button } from "@/components/ui/button";
-import { Pen, Plus } from "lucide-react";
+import { Pen } from "lucide-react";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -27,7 +25,7 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { todoFormSchema, todoFormValues } from "@/schema";
-import { createTodoAction, updateTodoAction } from "@/actions/todo";
+import { updateTodoAction } from "@/actions/todo";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useState } from "react";
 import Spin from "./Spin";
