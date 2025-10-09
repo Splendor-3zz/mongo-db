@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   experimental: {
     serverActions: {},
   },
+  devIndicators: false,
 };
 
 export default nextConfig;

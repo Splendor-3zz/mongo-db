@@ -65,10 +65,6 @@ const onSubmit = async ({title, body, completed}: todoFormValues) =>{
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>Add your todo</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you&apos;re
-              done.
-            </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4">
             <Form {...form}>
@@ -80,12 +76,8 @@ const onSubmit = async ({title, body, completed}: todoFormValues) =>{
             <FormItem>
               <FormLabel>title</FormLabel>
               <FormControl>
-                <Input placeholder="go crazy" {...field} />
+                <Input placeholder="your todo" {...field} />
               </FormControl>
-              <FormDescription>
-                This is your public display name. It can be your real name or a
-                pseudonym. You can only change this once every 30 days.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
@@ -99,15 +91,11 @@ const onSubmit = async ({title, body, completed}: todoFormValues) =>{
               <FormLabel>body</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us a little bit about yourself"
+                  placeholder="Tell us a little bit about your todo"
                   className="resize-none"
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
-                You can <span>@mention</span> other users and organizations to
-                link to them.
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
